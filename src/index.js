@@ -71,7 +71,7 @@ class App extends React.Component {
                 }}>+</Number>
             </div>
             <div>
-              <Number onClick={this.handleClickOn4}>4</Number>
+              <Number onClick={() => this.handleClickOnNumber(4)}>4</Number>
               <Number onClick={this.handleClickOn5}>5</Number>
               <Number onClick={this.handleClickOn6}>6</Number>
               <Number onClick={() => this.handleClickOnOperation("subtract")}
@@ -123,6 +123,9 @@ class App extends React.Component {
     } else {
       alert("Cannot add zero to an empty expression");
     }
+  }
+  handleClickOnNumber(a){
+
   }
   handleClickOn1(){
     var exp = document.getElementById("expression");
