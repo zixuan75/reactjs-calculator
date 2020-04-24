@@ -41,7 +41,6 @@ class App extends React.Component {
             <div>
               <button className="e" onClick={this.handleClickOnE}>e</button>
               <button className="pi" onClick={this.handleClickOnPI}>PI</button>
-              <button className="plusminus" onClick={this.plusOrMinus}><sup>+</sup>/<sub>-</sub></button>
             </div>
           </div>
           <div className="right-pane">
