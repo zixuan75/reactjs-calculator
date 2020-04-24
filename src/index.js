@@ -122,7 +122,7 @@ class App extends React.Component {
     if (exp.value !== ""){
       exp.value += "0";
     } else {
-      return;
+      alert("Cannot add zero to an empty expression");
     }
   }
   handleClickOn1(){
