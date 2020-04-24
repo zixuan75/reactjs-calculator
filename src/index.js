@@ -8,7 +8,6 @@ function Number(props){
   } else {
     console.log("Number " + props.children + " rendered");
   }
-
   return (
     <button className="num" onClick={props.onClick}>
       {props.children}
