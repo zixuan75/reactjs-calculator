@@ -1,5 +1,7 @@
 import React from 'react';
 import "./styles.css";
+
+import {render} from 'react-dom';
 function Number(props){
   if(props.callMessage){
     props.callMessage();
@@ -226,4 +228,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById("root"));

@@ -6,7 +6,7 @@
   float: left;
   width: 60%;
 }
-.calculator {
+html, .calculator {
   font-family: "Helvetica", sans-serif;
   background-color: pink;
 }
