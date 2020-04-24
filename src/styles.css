@@ -1,0 +1,101 @@
+.left-pane {
+  float: left;
+  width: 40%;
+}
+.right-pane {
+  float: left;
+  width: 60%;
+}
+.calculator {
+  font-family: "Helvetica", sans-serif;
+  background-color: pink;
+}
+.lodash {
+  height: 30px;
+  width: 60px;
+  border: 1px solid #999;
+}
+.image-js, .decimal, .infinity, .e, .pi, .plusminus {
+  height: 30px;
+  width: 35px;
+}
+.image-js {
+  margin-top: 1px;
+}
+.decimal, .infinity, .e, .pi, .plusminus {
+  padding-top: 4px;
+}
+button.e,
+button.pi {
+  margin-top: 42px;
+}
+button {
+  border-radius: 0px;
+  border: 1px solid #999;
+}
+button:hover {
+  background-color: green;
+  color: white;
+  box-shadow: 10px 10px 10px;
+}
+.clear {
+  background-color: lightblue;
+  color: black;
+}
+.num {
+  height: 30px;
+  width: 30px;
+}
+.equal-sign:focus {
+  background-color: pink;
+  color: black;
+}
+.equal-sign {
+  height: 30px;
+  width: 90px;
+  background-color: darkblue;
+  color: white;
+}
+input#expression {
+  width: 200px;
+  height: 35px;
+  color: black;
+  text-align: right;
+  border-radius: 5px;
+  margin-right: 15px;
+  border: 2px solid lightblue;
+  padding-right: 5px;
+}
+input#expression:focus {
+  border: 2px solid green;
+}
+#result {
+  color: blue;
+}
+error {
+  border: 2px solid red;
+}
+div.border-999 {
+  border: 2px solid #999;
+  border-radius: 15px;
+  width: 220px;
+  background-color: lightgreen;
+  padding: 10px 0px 10px 10px;
+  margin-left: 25px;
+  margin-top: 15px;
+  box-shadow: 3px 7px 15px black;
+  height: 235px;
+}
+hr {
+  margin-left: 23px;
+  border-bottom: 3px solid orange;
+}
+.sr-only {
+  display: none;
+}
+.vertical-line {
+  border-left: 6px solid rgb(13, 208, 25);
+  height: 180px;
+  position: absolute;
+  left: 122px;
+}
