@@ -62,27 +62,27 @@ class App extends React.Component {
                 }}>)</Number>
             </div>
             <div>
-              <Number onClick={this.handleClickOn1}>1</Number>
-              <Number onClick={this.handleClickOn2}>2</Number>
-              <Number onClick={this.handleClickOn3}>3</Number>
+              <Number onClick={() => this.handleClickOnNumber("1")}>1</Number>
+              <Number onClick={() => this.handleClickOnNumber("2")}>2</Number>
+              <Number onClick={() => this.handleClickOnNumber("3")}>3</Number>
               <Number onClick={() => this.handleClickOnOperation("add")}
                 callMessage= {function(){
                   console.log("Sign + rendered");
                 }}>+</Number>
             </div>
             <div>
-              <Number onClick={() => this.handleClickOnNumber(4)}>4</Number>
-              <Number onClick={this.handleClickOn5}>5</Number>
-              <Number onClick={this.handleClickOn6}>6</Number>
+              <Number onClick={() => this.handleClickOnNumber("4")}>4</Number>
+              <Number onClick={() => this.handleClickOnNumber("5")}>5</Number>
+              <Number onClick={() => this.handleClickOnNumber("6")}>6</Number>
               <Number onClick={() => this.handleClickOnOperation("subtract")}
                 callMessage= {function(){
                   console.log("Sign - rendered");
                 }}>-</Number>
             </div>
             <div>
-              <Number onClick={this.handleClickOn7}>7</Number>
-              <Number onClick={this.handleClickOn8}>8</Number>
-              <Number onClick={this.handleClickOn9}>9</Number>
+              <Number onClick={() => this.handleClickOnNumber("7")}>7</Number>
+              <Number onClick={() => this.handleClickOnNumber("8")}>8</Number>
+              <Number onClick={() => this.handleClickOnNumber("9")}>9</Number>
               <Number onClick={() => this.handleClickOnOperation("multiply")}
                 callMessage= {function(){
                   console.log("Sign * rendered");
@@ -125,43 +125,9 @@ class App extends React.Component {
     }
   }
   handleClickOnNumber(a){
-
-  }
-  handleClickOn1(){
+    var number = parseInt(a, 10);
     var exp = document.getElementById("expression");
-    exp.value += "1";
-  }
-  handleClickOn2(){
-    var exp = document.getElementById("expression");
-    exp.value += "2";
-  }
-  handleClickOn3(){
-    var exp = document.getElementById("expression");
-    exp.value += "3";
-  }
-  handleClickOn4(){
-    var exp = document.getElementById("expression");
-    exp.value += "4";
-  }
-  handleClickOn5(){
-    var exp = document.getElementById("expression");
-    exp.value += "5";
-  }
-  handleClickOn6(){
-    var exp = document.getElementById("expression");
-    exp.value += "6";
-  }
-  handleClickOn7(){
-    var exp = document.getElementById("expression");
-    exp.value += "7";
-  }
-  handleClickOn8(){
-    var exp = document.getElementById("expression");
-    exp.value += "8";
-  }
-  handleClickOn9(){
-    var exp = document.getElementById("expression");
-    exp.value += "9";
+    exp.value += number.toString();
   }
   handleClickOnE(){
     var exp = document.getElementById("expression");
