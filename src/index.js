@@ -36,6 +36,7 @@ class App extends React.Component {
             </div>
             <div>
               <button className="infinity" onClick={this.handleClickOnInfinity} title="Infinity">inf</button>
+              <button className="negative" onClick={this.handleNegativeClick} title="Negative sign">&minus;</button>
             </div>
             <br />
             <div>
@@ -100,6 +101,9 @@ class App extends React.Component {
       </div>
     )
   }
+  handleNegativeClick(){
+
+  }
   handleBackspaceClick(){
     var exp = document.getElementById("expression");
     exp.value = exp.value.slice(0, -1);
@@ -154,7 +158,9 @@ class App extends React.Component {
         };
         break;
       case "subtract":
-        exp.value += "-";
+        if (exp.value !== ""){
+          exp.value += "-";
+        }
         break;
       case "multiply":
         if (exp.value !== ""){

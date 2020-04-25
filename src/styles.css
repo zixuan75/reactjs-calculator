@@ -15,14 +15,14 @@ html, .calculator {
   width: 60px;
   border: 1px solid #999;
 }
-.image-js, .decimal, .infinity, .e, .pi {
+.image-js, .decimal, .infinity, .e, .pi, .negative {
   height: 30px;
   width: 35px;
 }
 .image-js {
   margin-top: 1px;
 }
-.decimal, .infinity, .e, .pi {
+.decimal, .infinity, .e, .pi, .negative {
   padding-top: 4px;
 }
 button.e,
