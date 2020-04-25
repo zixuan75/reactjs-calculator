@@ -102,7 +102,8 @@ class App extends React.Component {
     )
   }
   handleNegativeClick(){
-
+    var exp = document.getElementById("expression");
+    exp.value += "-";
   }
   handleBackspaceClick(){
     var exp = document.getElementById("expression");
