@@ -46,7 +46,7 @@ class App extends React.Component {
 
             </div>
             <div>
-              <button className="sqrt">&radic;</button>
+              <button className="sqrt" onClick={this.handleSqrtClick}>&radic;</button>
             </div>
           </div>
           <div className="right-pane">
@@ -109,6 +109,9 @@ class App extends React.Component {
   handleNegativeClick(){
     var exp = document.getElementById("expression");
     exp.value += "-";
+  }
+  handleSqrtClick(){
+
   }
   handleBackspaceClick(){
     var exp = document.getElementById("expression");
