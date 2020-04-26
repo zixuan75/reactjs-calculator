@@ -111,7 +111,10 @@ class App extends React.Component {
     exp.value += "-";
   }
   handleSqrtClick(){
-
+    var exp = document.getElementById("expression");
+    if (exp.value !== ""){
+      exp.value = "sqrt(" + exp.value + ")";
+    }
   }
   handleBackspaceClick(){
     var exp = document.getElementById("expression");
