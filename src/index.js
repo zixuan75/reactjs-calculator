@@ -14,11 +14,12 @@ function Number(props){
     </button>
   )
 }
-
+function sqrt(a){
+  return Math.sqrt(a);
+}
 // String.prototype.replaceAt=function(index, replacement) {
 //     return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
 // }
-
 class App extends React.Component {
   render(){
     return (
@@ -42,6 +43,10 @@ class App extends React.Component {
             <div>
               <button className="e" onClick={this.handleClickOnE}>e</button>
               <button className="pi" onClick={this.handleClickOnPI}>PI</button>
+
+            </div>
+            <div>
+              <button className="sqrt">&radic;</button>
             </div>
           </div>
           <div className="right-pane">
