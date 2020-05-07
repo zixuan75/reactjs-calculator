@@ -142,7 +142,7 @@ class App extends React.Component {
   handleClickOnNumber(a){
     // var number = parseInt(a, 10);
     var exp = document.getElementById("expression");
-    exp.value += number;
+    exp.value += a;
   }
   handleClickOnE(){
     var exp = document.getElementById("expression");
