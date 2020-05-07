@@ -1,6 +1,5 @@
 import React from 'react';
 import "./styles.css";
-
 import {render} from 'react-dom';
 function Number(props){
   if(props.callMessage){
@@ -141,9 +140,9 @@ class App extends React.Component {
     }
   }
   handleClickOnNumber(a){
-    var number = parseInt(a, 10);
+    // var number = parseInt(a, 10);
     var exp = document.getElementById("expression");
-    exp.value += number.toString();
+    exp.value += number;
   }
   handleClickOnE(){
     var exp = document.getElementById("expression");
