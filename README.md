@@ -1,2 +1,2 @@
 # reactjs-calculator
-A calculator that I made in React. Has numbers, mod, and even Infinity!
+A calculator that I made in React. Has numbers, mod, and even Infinity! It passes the 1/a * a test which is a crucial test for calculators. First, you divide 1 by 7 or 3 or any number that has recurring decimal digits when divided by 1. Then, you multiply back that number again. The test is to see if it outputs 1 or 0.9999999999. This calculator outputs 1. Also, this calculator has more digits in it than Google calculator.
