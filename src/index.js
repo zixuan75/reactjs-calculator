@@ -16,9 +16,6 @@ function Number(props){
 function sqrt(a){
   return Math.sqrt(a);
 }
-// String.prototype.replaceAt=function(index, replacement) {
-//     return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
-// }
 class App extends React.Component {
   render(){
     return (
