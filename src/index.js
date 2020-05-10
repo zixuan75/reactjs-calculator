@@ -186,7 +186,13 @@ class App extends React.Component {
   handleSubmit(){
     var exp = document.getElementById("expression");
     if(exp.value !== ""){
-      exp.value = eval(exp.value).toString();
+      try {
+        exp.value = eval(exp.value).toString();
+      } catch (error) {
+        exp.value = "";
+        console.error("Invalid expression");
+        alert("Please enter a valid expression");
+      }
     }
     else {
       alert("Please enter a expression.");
@@ -195,11 +201,17 @@ class App extends React.Component {
   handleKeySubmit(event){
     if(event.key === "Enter"){
       var exp = document.getElementById("expression");
-
       if(exp.value !== ""){
-        exp.value = eval(exp.value).toString();
-      } else {
-        alert("Please enter expression");
+        try {
+          exp.value = eval(exp.value).toString();
+        } catch (error) {
+          exp.value = "";
+          console.error("Invalid expression");
+          alert("Please enter a valid expression");
+        }
+      }
+      else {
+        alert("Please enter a expression.");
       }
     } else {
       return;
