@@ -190,6 +190,7 @@ class App extends React.Component {
         exp.value = eval(exp.value).toString();
       } catch (error) {
         exp.value = "";
+        console.error("Invalid expression");
         alert("Please enter a valid expression");
       }
     }
@@ -205,6 +206,7 @@ class App extends React.Component {
           exp.value = eval(exp.value).toString();
         } catch (error) {
           exp.value = "";
+          console.error("Invalid expression");
           alert("Please enter a valid expression");
         }
       }
@@ -215,7 +217,6 @@ class App extends React.Component {
       return;
     }
   }
-
 }
 
 render(<App />, document.getElementById("root"));
