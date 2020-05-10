@@ -200,16 +200,22 @@ class App extends React.Component {
   handleKeySubmit(event){
     if(event.key === "Enter"){
       var exp = document.getElementById("expression");
-
       if(exp.value !== ""){
-        exp.value = eval(exp.value).toString();
-      } else {
-        alert("Please enter expression");
+        try {
+          exp.value = eval(exp.value).toString();
+        } catch (error) {
+          exp.value = "";
+          alert("Please enter a valid expression");
+        }
+      }
+      else {
+        alert("Please enter a expression.");
       }
     } else {
       return;
     }
   }
+
 }
 
 render(<App />, document.getElementById("root"));
