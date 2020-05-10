@@ -186,7 +186,12 @@ class App extends React.Component {
   handleSubmit(){
     var exp = document.getElementById("expression");
     if(exp.value !== ""){
-      exp.value = eval(exp.value).toString();
+      try {
+        exp.value = eval(exp.value).toString();
+      } catch (error) {
+        exp.value = "";
+        alert("Please enter a valid expression");
+      }
     }
     else {
       alert("Please enter a expression.");
