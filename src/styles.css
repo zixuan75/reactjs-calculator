@@ -15,19 +15,18 @@ html, .calculator {
   width: 60px;
   border: 1px solid #999;
 }
-.image-js, .decimal, .infinity, .e, .pi, .negative, .sqrt {
+.image-js, .decimal, .infinity, .e, .pi, .negative, .sqrt, .sin, .cos {
   height: 30px;
   width: 35px;
 }
 .image-js {
   margin-top: 1px;
 }
-.decimal, .infinity, .e, .pi, .negative, .sqrt {
+.decimal, .infinity, .e, .pi, .negative, .sqrt, .sin, .cos {
   padding-top: 4px;
 }
-button.e,
-button.pi {
-  margin-top: 42px;
+button.sin{
+  margin-top: 50px;
 }
 button {
   border-radius: 0px;
@@ -35,7 +34,6 @@ button {
 }
 button:hover {
   background-color: green;
-  color: white;
   box-shadow: 10px 10px 10px;
 }
 .clear {

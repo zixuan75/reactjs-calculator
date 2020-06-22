@@ -13,9 +13,7 @@ function Number(props){
     </button>
   )
 }
-function sqrt(a){
-  return Math.sqrt(a);
-}
+function sqrt(a){return Math.sqrt(a);}function sin(a){return Math.sin(a);}function cos(a){return Math.cos(a);}
 class App extends React.Component {
   render(){
     return (
@@ -35,14 +33,12 @@ class App extends React.Component {
               <button className="infinity" onClick={this.handleClickOnInfinity} title="Infinity">inf</button>
               <button className="negative" onClick={this.handleNegativeClick} title="Negative sign">&minus;</button>
             </div>
-            <br />
+            <div>
+              <button className="sin" onClick={this.handleSineClick}>sin</button>
+            </div>
             <div>
               <button className="e" onClick={this.handleClickOnE}>e</button>
               <button className="pi" onClick={this.handleClickOnPI}>PI</button>
-
-            </div>
-            <div>
-              <button className="sqrt" onClick={this.handleSqrtClick}>&radic;</button>
             </div>
           </div>
           <div className="right-pane">
@@ -108,7 +104,11 @@ class App extends React.Component {
   }
   handleSqrtClick(){
     var exp = document.getElementById("expression");
-    exp.value = "sqrt(" + exp.value;
+    exp.value = exp.value + "sqrt(";
+  }
+  handleSineClick(){
+    var exp = document.getElementById("expression");
+    exp.value = exp.value + "sin(";
   }
   handleBackspaceClick(){
     var exp = document.getElementById("expression");
